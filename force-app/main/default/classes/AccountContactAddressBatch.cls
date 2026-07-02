@@ -2,7 +2,7 @@ public class AccountContactAddressBatch implements Database.Batchable<sObject>
 {
     public Database.QueryLocator start(Database.BatchableContext bc)
     {
-      string query = 'SELECT Id, billingCountry, billingState, billingCity FROM Account';
+      string query = 'SELECT Id, billingCountry, billingState, billingCity, billingState FROM Account';
       return Database.getQueryLocator(query);  
     }
     
