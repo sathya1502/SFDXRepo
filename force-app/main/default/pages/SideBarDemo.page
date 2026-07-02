@@ -1,0 +1,5 @@
+<apex:page sidebar="false" >
+  <apex:pageBlock title="Sidebar Visibility">
+      <apex:outputText >SideBar can be hidden by setting SideBar="False" in the apex:page tag</apex:outputText>
+  </apex:pageBlock>
+</apex:page>

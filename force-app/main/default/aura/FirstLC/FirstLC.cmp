@@ -1,0 +1,17 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<h1>Hello Lightning</h1>
+   
+    <!-- <aura:attribute name = "var1" type="string" default="10"></aura:attribute>
+    <h1>Attribute Value: {!v.var1}</h1>-->
+    
+    <aura:attribute name="Message" type="string"></aura:attribute>
+    Greeting: {!v.Message}<br></br>
+    <lightning:button label="Click me" onclick = "{!c.handleClick}"/>
+    
+    <h1>Even OR Odd ?</h1>
+    <aura:attribute name="num1" type="integer" default="6"></aura:attribute>    
+    <aura:attribute name="res" type="integer"></aura:attribute>
+    
+    <lightning:button label="Click here to calculate" onclick="{!c.evenOrOdd}"></lightning:button>
+    result: "{!v.res}"
+</aura:component>

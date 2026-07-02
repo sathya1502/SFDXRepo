@@ -1,0 +1,8 @@
+<aura:component controller="OppAuraController">
+    <aura:attribute name="oppList" type="opportunity[]" />
+    <ui:button label="display Opps" press="{!c.getOpps}"/><br/>
+    <aura:iteration var="opp" items="{!v.oppList}">
+            {!opp.Name}- Owned by <i>{!opp.Owner.Name}</i> <br/>
+    </aura:iteration>
+	
+</aura:component>

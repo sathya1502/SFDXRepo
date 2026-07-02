@@ -1,0 +1,29 @@
+<apex:page >
+<h1>Employee Submission Form</h1><br/>
+<Apex:form >
+<apex:pageBlock >
+    <apex:pageblockButtons >
+        <apex:commandButton value="Save"/>
+    </apex:pageblockButtons>
+    <apex:outputLabel value="Enter Your Name:" for="name"></apex:outputLabel>  
+    <apex:InputText id="name"/><br/>
+    
+    <apex:OutputLabel value="Enter your age:" for="age"></apex:OutputLabel>
+    <apex:inputText id="age"/><br/>
+    
+    <apex:outputLabel value="set a userName:" for="username"></apex:outputLabel>
+    <apex:inputText Id="username"/><br/>
+    
+    <apex:outPutLabel value="Enter Password:" for="pwd"> </apex:outPutLabel>
+    <apex:inputHidden Id="pwd"/><br/>
+    
+    <apex:outputLabel value="Provide your Cover Letter:" for="coverletter"></apex:outputLabel>
+    <apex:inputTextArea Id="coverletter"/><br/>
+    
+    <Apex:outPutLabel value="are you currently employeed?" for="currentemployee"></Apex:outPutLabel>
+     <apex:inputCheckbox Id="currentemployee"/><br/><br/>
+     
+     <apex:outputLink value="google.com" >Google URL</apex:outputLink>
+</apex:pageBlock>   
+</Apex:form> 
+</apex:page>

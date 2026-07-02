@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<lightning:card footer="footer attribute in lightning:card tag" title="Lightning Card Demo">
+    <h1>auraDemo1: Welcome, First Aura Page</h1>
+     </lightning:card>
+    <aura:attribute name="varName" type="string" default="Kill"/> <!-- This is the variable declaration in AURA-->
+    <br/>
+    <h1>Approach to render the attribute(variable): {!v.varName}</h1>   
+    <c:auraDemo3/>
+    
+</aura:component>

@@ -1,0 +1,4 @@
+<aura:component controller="SimpleServerDemo">
+    <aura:attribute name="fName" type="string" default="Sathya M"/>
+    <ui:button label="Call Server" press="{!c.handleEcho}"/>
+</aura:component>

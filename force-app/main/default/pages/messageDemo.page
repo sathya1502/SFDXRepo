@@ -1,0 +1,8 @@
+<apex:page >
+
+<apex:pageMessage summary="This is an Info message with strength 1" severity="info" strength="1"></apex:pageMessage>
+<apex:pageMessage summary="This is a confirmation message with strength 2" severity="confirm" strength="2"></apex:pageMessage> 
+<apex:pageMessage summary="This is an Warning meesage with strength 3" severity="warning" strength="3"></apex:pageMessage>
+<apex:pageMessage summary="This is an Error message with strength 3" severity="Error" strength="3"></apex:pageMessage>
+
+</apex:page>

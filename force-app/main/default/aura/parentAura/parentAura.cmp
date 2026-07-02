@@ -1,0 +1,13 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    
+    <aura:attribute name="parentVar" type="string" default="Parent Attribute Value"/>
+    Parent Variable: {!v.parentVar}
+    
+    <!-- Calling Child -->
+    <!-- Syntax: c:ChildAuraName childVariableName=ParentVarName_that_should_be_passed_to_child_to_update-->
+    <p>Control is going to Child from parent</p>
+    <c:childAura childVar="{!v.parentVar}"/> <!-- In this Line control goes to child-->
+    <br/><p>Control is back to Parent</p><br/>
+    <lightning:button label="Update parent Var" onclick="{!c.updateParentVar}"/> <br/>
+	
+</aura:component>

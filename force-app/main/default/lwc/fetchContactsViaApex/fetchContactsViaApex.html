@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title =  "Apex Retrieved Contacts" >
+        <template if:true={responseReceived}>
+            <template for:each={contacts.data} for:item="con">           
+                <ul key={con.Id}>
+                    <li>{con.LastName}</li>
+                    <li>{con.Phone}</li>
+                </ul>            
+            </template>
+        </template>
+        
+    </lightning-card>
+    
+</template>

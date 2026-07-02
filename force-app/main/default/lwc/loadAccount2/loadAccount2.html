@@ -1,0 +1,18 @@
+<template>
+   
+    <lightning-record-view-form object-api-name="Account" record-id={recordId}>
+       <lightning-card title="Account info">
+        <div class="slds-grid">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="Name" ></lightning-output-field>
+                <lightning-output-field field-name="Phone"></lightning-output-field>
+            </div>
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="AnnualRevenue"></lightning-output-field>
+                <lightning-output-field aria-label="Owner Name" field-name="OwnerId"></lightning-output-field>
+            </div>
+        </div> 
+    </lightning-card>
+    </lightning-record-view-form>
+  
+</template>

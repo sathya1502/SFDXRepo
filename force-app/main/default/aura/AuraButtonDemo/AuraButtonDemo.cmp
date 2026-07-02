@@ -1,0 +1,8 @@
+<aura:component >
+    <br/>
+    <aura:attribute name="text" type="string" default="Sathya"/>
+    <input type="button" value="Flawed HTML Button" default="Input and button" onclick="alert('Inline JS')" />
+    <input type="button" value="Hybrid Button" default="HTML" onclick="{!c.handleClick}"/>
+    <ui:button label="Framework button" press="{!c.handleClick}"/>
+    {!v.text}
+</aura:component>

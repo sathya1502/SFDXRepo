@@ -1,0 +1,8 @@
+<aura:component implements="force:appHostable" >
+    <aura:attribute name="numbers" type="list"/>
+    <br/>
+    <ui:button label="Display Numbers" press="{!c.getNumbers}"/><br/>
+    <aura:iteration var="num" items="{!v.numbers}">
+        {!num.value}, 
+    </aura:iteration>
+</aura:component>

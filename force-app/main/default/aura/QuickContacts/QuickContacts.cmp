@@ -1,0 +1,27 @@
+<aura:component >
+    <link href="/resource/bootstrap/" rel="stylesheet"/>
+    <div>
+        <div>
+            <a href="#" class="navbar-brand">Lightning Contacts</a>       
+        </div>
+    </div>
+    <br/>
+   <!-- <div class="col-sm-8">
+                    <div class="card">
+                        <c:ContactDetails/>
+                    </div>
+    </div>-->
+    <div class="container">
+       
+            <div class="col-sm-4">
+                <div class="col-sm-12">     
+                <c:ContactDetails/>
+            </div> 
+                <c:SearchBar/>                
+                <c:ContactList/>
+            </div>
+                       
+        </div>
+
+    
+</aura:component>

@@ -1,0 +1,21 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <!--<aura:attribute name="edit" type="boolean" default="true"/>
+    <BR/>
+   <aura:if isTrue="{!v.edit}">
+        <ui:button label="Edit"/>
+        <aura:set attribute="else">
+            Hello, This is Sathya
+        </aura:set>
+    </aura:if>
+    <hr></hr>
+    <h1><b>Browser Attributes</b></h1><br/>
+    <p>The browser is on the tablet {!$Browser.isTablet}</p>
+    <p>The browser is on the Android {!$Browser.isAndroid}</p>
+    <p>Where is this running? {!$Browser.formFactor}</p>-->
+    <br/>
+    <h1><b>Locale Attributes</b></h1><br/>
+    <p>Language: {!$Locale.language}</p>
+    <p>Timezone: {!$Locale.timezone}</p>
+    <p>Number Format: {!$Locale.numberFormat}</p>
+    <p>Currency: {!$Locale.currency}</p>
+</aura:component>

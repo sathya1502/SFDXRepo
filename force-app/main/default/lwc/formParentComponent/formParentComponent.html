@@ -1,0 +1,13 @@
+<template>
+    <lightning-input type="text" label = "Enter Name" placeholder="Name" onchange={handleNameChange}></lightning-input>
+    <lightning-input type="text" label  ="Enter Age" placeholder="Age" onchange={handleAgeChange}></lightning-input>
+
+    <p>To know the details of the candidate: 
+        <lightning-button label="Click Here" onclick={showHide} variant="Brand"></lightning-button> 
+    </p>
+    <template if:true={show}>
+        <c-child-comp c-name = {parentName} c-age = {parentAge} onconfirm={handleConfirmMessage} ></c-child-comp>
+        <!--<button onconfirm={handleConfirmMessage}>call Child</button>-->
+        <p>{childConfirmation}</p>        
+    </template>    
+</template>

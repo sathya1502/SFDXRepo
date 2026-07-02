@@ -1,0 +1,12 @@
+<aura:component >
+    <br/>
+    <ui:inputText label="First Name "  placeholder="enter your fname" aura:id="fname" /><br/>
+    <p>The entered first name is: </p><ui:outputText aura:id="oname" value=""/><br/>
+    <ui:button aura:id="buttonId" label="hit me" press="{!c.getInput}"/>
+    <hr/>
+    <aura:attribute name="fname"  type="string" default=""/>
+    <aura:attribute name="lname"  type="string" default=""/>
+    <ui:inputText label="first name" value="{!v.fname}" updateOn="keyup"/>
+    <ui:inputText label="last name" value="{!v.lname}" updateOn="keyup"/>
+    <p>The entered name is: </p><ui:outputText value="{!v.fname + ' ' + v.lname}" />
+</aura:component>

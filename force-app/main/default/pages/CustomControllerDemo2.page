@@ -1,0 +1,15 @@
+<apex:page controller="AccountCustomController2" >
+  <apex:form >
+      <apex:pageBlock title="Account Upsert Page">
+      <apex:pageBlockButtons >
+          <apex:CommandButton value="Save" action="{!Save}"/>
+      </apex:pageBlockButtons>
+      <apex:pageBlockSection >
+          <apex:InputField value="{!account.name}" />
+          <apex:InputField value="{!account.Active__c}" />
+          <apex:InputField value="{!account.Site}"/>
+      </apex:pageBlockSection>      
+      </apex:pageBlock>
+      
+  </apex:form>
+</apex:page>

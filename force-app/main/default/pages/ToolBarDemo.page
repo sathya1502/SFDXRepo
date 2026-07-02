@@ -1,0 +1,17 @@
+<apex:page >
+    <apex:Toolbar >
+        <apex:toolbarGroup Id="group1" itemSeparator="Line"  >
+            <apex:outputText value="Sample Toolbar"></apex:outputText>
+            <apex:outputLink style="color:white" value="https://docs.google.com/document/d/14xZMRDKbM4Lx2K9pOoMThrkH4sbyYJiIx_JZBTN5XGs/edit?tab=t.oftxbvp5kbxn">SFDC Notes</apex:outputLink>  
+            <apex:outputLink style="color:white" value="https://docs.google.com/spreadsheets/d/1NfKblgXf70TmULjuWvtjvmxXRnqHtktbmv1ueWfeKVQ/edit?usp=sharing">SF Learning</apex:outputLink>      
+        </apex:toolbarGroup>
+        <apex:toolbarGroup Id="group2" location="right" itemSeparator="Line">
+            <apex:form >
+                <apex:outputLabel Id="entertext" for="entextin" value="Enter Text: "></apex:outputLabel>
+                <apex:inputtext Id="entextin"/>
+                <apex:commandButton value="Search"/>
+            </apex:form>
+        </apex:toolbarGroup>
+    </apex:Toolbar>
+  
+</apex:page>

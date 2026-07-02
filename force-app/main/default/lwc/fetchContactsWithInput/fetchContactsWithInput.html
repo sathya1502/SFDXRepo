@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Contact List - Apex Interaction" class="slds">
+        <lightning-input label="Enter the no. of contacts to display" type="number" onchange={handleLimitChange}></lightning-input>
+        <lightning-button label="Shoot" onclick={handleHit} class="slds-m-left_x-small"></lightning-button>
+        <template if:true={responseReceived}>
+            <template for:each={contacts} for:item="con">
+                <lightning-card key={con.Id} title={con.LastName}>
+                    <p class="slds-p-horizontal_small">{con.Phone}</p>
+                </lightning-card>
+            </template>
+        </template>
+    </lightning-card>
+    
+</template>

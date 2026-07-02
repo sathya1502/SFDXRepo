@@ -1,0 +1,6 @@
+<apex:page >
+    <apex:panelBar >
+        <apex:PanelBarItem label="PanelBarItem1">This is the content visible when expanded</apex:PanelBarItem>
+        <apex:PanelBarItem label="PanelBaritem2">This is written in b/w open and close tag</apex:PanelBarItem>
+    </apex:panelBar> 
+</apex:page>

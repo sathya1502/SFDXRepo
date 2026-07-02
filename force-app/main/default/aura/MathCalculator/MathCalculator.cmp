@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global" >
+    <aura:attribute name="num1" type="integer" default="10"/>
+    <aura:attribute name="num2" type="integer" default="20"/>
+    <aura:attribute name="sum" type="integer"/>
+    <h1> <b><u><i>Addition</i></u></b></h1><br/>
+    
+    <div>
+        <ul>
+            <li>* First Number: {!v.num1}</li>
+            <li>* Second Number: {!v.num2}</li>
+            <li>* Sum:  {!v.sum}</li>
+        </ul>
+    </div>
+    
+    <lightning:button variant="Brand" label="Sum" onclick="{!c.add}"></lightning:button>
+</aura:component>

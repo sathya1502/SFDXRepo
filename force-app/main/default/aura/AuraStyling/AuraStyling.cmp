@@ -1,0 +1,11 @@
+<aura:component>
+    <div>
+        <h1 class="sal">Sathya Rupa M</h1> 
+    </div>
+       
+    <div>
+    	<div class="sf"> Salesforce Developer</div>
+        <br/>
+        <div class="sf">Clicks and Code</div>
+    </div>
+</aura:component>

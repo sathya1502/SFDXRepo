@@ -1,0 +1,8 @@
+<apex:page >
+  <h1>Congratulations Sathya</h1>    
+  <p>This is your first VF Page in 2025 </p>
+  <p>Full Name: {! $User.FirstName & '-' & $User.LastName}</p>
+  <p>Today's Date: {!Today()} </p>
+  <p>Current Year: Year({!Today()}) </p>
+   <p>"Salesforce contains force? " {!IF(Contains('Salesforce','force'), TRUE, FALSE)}</p>
+</apex:page>

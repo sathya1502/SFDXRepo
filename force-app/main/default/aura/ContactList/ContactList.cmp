@@ -1,0 +1,15 @@
+<aura:component controller="ContactController">
+    <aura:attribute name="conList" type="Contact[]" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:handler event="c:SearchKeyChange" action="{!c.searchKeyChange}" />
+    
+    <aura:iteration var="con" items="{!v.conList}">
+        <a href="{!'#contact/' + con.Id}">
+            <p>{!con.FirstName} </p>
+            <p>{!con.LastName}</p>
+            <p>{!con.Email}</p>
+            <hr/>
+        </a>
+    </aura:iteration>
+</aura:component>

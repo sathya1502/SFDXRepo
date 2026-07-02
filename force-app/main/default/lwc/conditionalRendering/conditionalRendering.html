@@ -1,0 +1,8 @@
+<template>
+    <button class="slds-button slds-button_brand" onclick={handleToggle}>Toggle</button>
+    <template if:true={isVisibility}>
+        <lightning-card style="background-color: aliceblue;">
+            <p> Conditional Rendering</p>
+        </lightning-card>        
+    </template>
+</template>

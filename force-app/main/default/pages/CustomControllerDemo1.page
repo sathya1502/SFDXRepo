@@ -1,0 +1,8 @@
+<apex:page controller="AccountCustomController">
+ <apex:form >
+     <apex:pageBlock title="Welcome to Salesforce, {!$User.FirstName}">
+         Account to Update: <apex:inputField value="{!account.name}"/> 
+         <apex:commandButton value="Custom Save" action="{!CustomSave}"/>
+     </apex:pageBlock>
+ </apex:form>
+</apex:page>

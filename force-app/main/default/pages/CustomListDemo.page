@@ -1,0 +1,8 @@
+<apex:page controller="OppController" >
+    <apex:pageBlock >
+        <apex:pageblockTable value="{!oppList}" var="o">
+            <apex:column value="{!o.Name}"/>
+            <apex:column value="{!o.CloseDate}"/>
+        </apex:pageblockTable>
+    </apex:pageBlock>
+</apex:page>

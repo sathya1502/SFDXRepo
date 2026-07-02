@@ -1,0 +1,17 @@
+<apex:page StandardController="Opportunity" recordSetVar="oppList">
+  <apex:form >
+      <apex:pageBlock title="Opportunity List">
+          <apex:pageBlockSection >
+               <apex:dataList value="{!oppList}" var="o" rows="5">
+                   {!o.Name} in <b>{!o.StageName}</b> Stage
+               </apex:dataList>
+          </apex:pageBlockSection>
+          
+          <apex:CommandButton Value="Previous" action="{!Previous}"/>
+          <apex:commandButton Value="Next" action="{!next}"/>          
+          <apex:CommandLink action="{!first}">First    </apex:CommandLink>
+          <apex:CommandLink action="{!last}">   Last</apex:CommandLink>
+             
+      </apex:pageBlock>
+  </apex:form>
+</apex:page>

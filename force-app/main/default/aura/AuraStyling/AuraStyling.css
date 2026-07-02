@@ -1,0 +1,25 @@
+.THIS .sal {
+    color: white;
+    font-size: 60px;
+    border: 2 px solid black;
+    font-weight: bold;
+    background-color: Blue;
+}
+.THIS .sf {
+    color: Maroon;
+    background-color: pink;
+    padding: 5px;
+    border-radius: 4px;
+}
+.THIS .green {
+    background-color: green;
+    color: white;
+}
+.THIS .red {
+    color: red;
+    background-color: pink;
+}
+.THIS .blue {
+    background-color: blue;
+    color: white;
+}

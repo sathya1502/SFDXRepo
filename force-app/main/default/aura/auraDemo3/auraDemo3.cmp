@@ -1,0 +1,16 @@
+<aura:component >
+	<h1>auraDemo3: Welcome, This is a third lightning component that is called from LC1</h1> <br/>    
+    <hr/>
+    
+    <aura:attribute name="message1" type="string" default="bullCrap"/>
+    Hello {!v.message1}  <br/><br/>
+    <lightning:button variant="success" label="First Button" onclick="{!c.handleClick}"></lightning:button> <br/><br/>
+    <aura:attribute name="message2" type="string" default="bunchLoadofbullCrap"/>
+    Hello {!v.message2}  <br/><br/>
+    <lightning:button variant="brand" label="Second Button" onclick="{!c.handleClick}"></lightning:button>    
+    <hr/>
+    
+    <h1>Demo for badge</h1><br/>
+    <lightning:badge label="Badge"/>
+    
+</aura:component>

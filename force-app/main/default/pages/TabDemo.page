@@ -1,0 +1,6 @@
+<apex:page Id="tabDemo">
+ <apex:tabPanel switchType="Ajax" >
+     <apex:tab label="Home" name="home" Id="home">Home Tab Content</apex:tab> 
+     <apex:tab label="Students" name="student" Id="student">Student Tab Content</apex:tab> 
+ </apex:tabPanel>
+</apex:page>

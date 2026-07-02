@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Navigation and (re)Direction">
+        <lightning-card title = "Button Minion">
+            <lightning-button-group>
+                <lightning-button label="New Account" onclick={HandleNavNew}></lightning-button>
+                <lightning-button label="Edit Account" onclick={HandleNavEdit}></lightning-button>            
+                <lightning-button label="View Account" onclick={HandleNavView}></lightning-button>
+            </lightning-button-group>
+        </lightning-card><br/>
+            <lightning-card title="List Views: Contacts and Accounts">
+                <lightning-button-group>
+                    <lightning-button label="View Related Contacts" onclick={handleRelatedContactView}></lightning-button>
+                    <lightning-button label="Recent Account List View" onclick={handleAccountRecentView}></lightning-button>
+                </lightning-button-group>
+            </lightning-card>
+            <lightning-card title="Navigate to Object Page">
+                <lightning-button label="Account Page" onclick={navAccountPage}></lightning-button>
+                <lightning-button label="Contact Page" onclick={navContactPage}></lightning-button>
+            </lightning-card>
+            <lightning-card title="Naviagate to Web Page">
+                <lightning-button label="Web Page" onclick={navWebPage}></lightning-button>
+            </lightning-card>
+            <lightning-card title="Naviagate to Web Chatter Page">
+                <lightning-button label="Standard Home Page" onclick={navHomePage}></lightning-button>
+                <lightning-button label="Standard Chatter Page" onclick={navChatterPage}></lightning-button>
+            </lightning-card>
+        </lightning-card>
+    </lightning-card>
+    
+</template>
